@@ -18,25 +18,25 @@ Project ini merupakan implementasi REST API untuk CRUD, middleware, dan env meng
 ### Fitur dalam program
 
 ### Struktur Folder Project
-|── package.json
-├── src/
-│   ├── app.js
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   └── bookController.js
-│   ├── models/
-│   │   └── bookModel.js
-│   ├── routes/
-│   │   ├── authRouter.js
-│   │   └── bookRouter.js
-│   └── middleware/
-│       ├── authvalidate.js
-│       ├── bookValidate.js
-│       ├── errorHandler.js
-│       └── log.js
-└── README.md
+  |── package.json
+  ├── src/
+  │   ├── app.js
+  │   ├── config/
+  │   │   └── db.js
+  │   ├── controllers/
+  │   │   ├── authController.js
+  │   │   └── bookController.js
+  │   ├── models/
+  │   │   └── bookModel.js
+  │   ├── routes/
+  │   │   ├── authRouter.js
+  │   │   └── bookRouter.js
+  │   └── middleware/
+  │       ├── authvalidate.js
+  │       ├── bookValidate.js
+  │       ├── errorHandler.js
+  │       └── log.js
+  └── README.md
 
 ### Cara Instalasi
 1. Clone repository
@@ -81,13 +81,35 @@ npm run dev
 ```
 
 ### Hasil Program
-1. GET /books tanpa auth
-2. POST /auth/register
-3. POST /auth/login
-4. GET /books dengan auth
-5. POST /books
-6. DELETE /books/:id
-7. PUT /books/:id
-8. Middleware logger
-9. Middleware validate
-10. Middleware error handler
+1. GET /books tanpa auth akan error karena auth di bagian middleware belum terpenuhi
+<img width="1378" height="1088" alt="Screenshot 2025-10-27 072655" src="https://github.com/user-attachments/assets/fabc10d0-c3ce-471b-8f19-a24d09250e13" />
+
+2. POST /auth/register untuk mendaftarkan email ke database dan mendapatkan token
+<img width="1345" height="1085" alt="Screenshot 2025-10-27 072758" src="https://github.com/user-attachments/assets/7e7b6e0b-e340-48ca-a255-54566915bd91" />
+
+3. POST /auth/login untuk mendapatkan token 
+<img width="1355" height="1044" alt="Screenshot 2025-10-27 093628" src="https://github.com/user-attachments/assets/4be4b7dd-4a8f-4062-8d7e-570b18b077e2" />
+
+4. GET /books dengan auth untuk menampilkan semua buku yang ada di dalam table books
+<img width="1345" height="1085" alt="Screenshot 2025-10-27 072841" src="https://github.com/user-attachments/assets/c450ef93-5f08-4fdf-ae49-d0f493793070" />
+
+5. POST /books untuk menambahkan buku baru
+<img width="1347" height="1090" alt="Screenshot 2025-10-27 073016" src="https://github.com/user-attachments/assets/a24d374f-15fd-4cdc-b394-31eb098e6697" />
+
+6. DELETE /books/:id untuk menghapus buku berdasarkan id
+<img width="1348" height="1088" alt="Screenshot 2025-10-27 073042" src="https://github.com/user-attachments/assets/6675d1fd-993b-4d03-8922-647806b7a589" />
+
+7. PUT /books/:id untuk update data buku
+<img width="1366" height="1007" alt="Screenshot 2025-10-27 093840" src="https://github.com/user-attachments/assets/315586c4-2366-4209-9fa4-5a7635c37bd4" />
+
+8. Middleware logger untuk menampilkan semua request yang berjalan di server
+<img width="525" height="220" alt="Screenshot 2025-10-27 093902" src="https://github.com/user-attachments/assets/f02f6411-f879-4fcc-9ad7-1b5b95c04922" />
+
+9. Middleware bookvalidate
+<img width="1378" height="737" alt="Screenshot 2025-10-27 094023" src="https://github.com/user-attachments/assets/dce38f58-abfd-4f98-b696-fa933d0218f7" />
+
+10. middleware authvalidate 
+<img width="1361" height="201" alt="image" src="https://github.com/user-attachments/assets/9a4512a2-42f0-4097-bfbc-a08bcc7ccae7" />
+
+11. Middleware error handler
+<img width="1359" height="696" alt="Screenshot 2025-10-27 094124" src="https://github.com/user-attachments/assets/2f94b56b-ac0a-4a83-825d-ebaf45ba48a2" />
