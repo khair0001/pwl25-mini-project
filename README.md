@@ -14,9 +14,6 @@
 ### Deskripsi Project
 Project ini merupakan implementasi REST API untuk CRUD, middleware, dan env menggunakan express dan untuk databasenya menggunakan mysql.  Kasus yang saya ambil adalah BooksAPI yang menampilkan 
 
-
-### Fitur dalam program
-
 ### Struktur Folder Project
 ```
   |── package.json
@@ -39,6 +36,16 @@ Project ini merupakan implementasi REST API untuk CRUD, middleware, dan env meng
   │       └── log.js
   └── README.md
 ```
+
+### Fitur dalam program
+- register
+- login
+- get data semua buku
+- get data buku berdasarkan id
+- create buku
+- update buku
+- delete buku
+
 
 ### Cara Instalasi
 1. Clone repository
