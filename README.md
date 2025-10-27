@@ -18,6 +18,7 @@ Project ini merupakan implementasi REST API untuk CRUD, middleware, dan env meng
 ### Fitur dalam program
 
 ### Struktur Folder Project
+```
   |── package.json
   ├── src/
   │   ├── app.js
@@ -37,6 +38,7 @@ Project ini merupakan implementasi REST API untuk CRUD, middleware, dan env meng
   │       ├── errorHandler.js
   │       └── log.js
   └── README.md
+```
 
 ### Cara Instalasi
 1. Clone repository
